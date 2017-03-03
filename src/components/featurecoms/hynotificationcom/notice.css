@@ -1,0 +1,109 @@
+.notification-notice{
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    line-height: 1.5;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.notification-notice .notification-notice-content{
+
+}
+.notification-notice .notification-notice-content .notification-notice-message{
+    font-size: 14px;
+    color: #404040;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 20px;
+}
+.notification-notice .notification-notice-content .notification-notice-description{
+    font-size: 12px;
+}
+
+.notification-notice .notification-notice-content .notification-notice-btn{
+    float: right;
+}
+
+.notification-notice .notification-notice-close{
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    color: #999;
+    outline: none;
+    text-decoration: none;
+}
+
+.notification-notice .notification-notice-close:hover {
+  color: #404040;
+}
+
+.notification-notice .notification-notice-close .notification-notice-close-x:after{
+    font-size: 12px;
+    content: "×";
+    cursor: pointer;
+}
+
+.notification-fade-enter{
+  -webkit-animation: NotificationFadeIn 0.24s;
+          animation: NotificationFadeIn 0.24s;
+}
+.notification-fade-leave{cha
+  -webkit-animation: NotificationFadeOut 0.24s;
+          animation: NotificationFadeOut 0.24s;
+}
+@-webkit-keyframes NotificationFadeIn {
+  0% {
+    opacity: 0;
+    left: 335px;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes NotificationFadeIn {
+  0% {
+    opacity: 0;
+    left: 335px;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes NotificationFadeOut {
+  0% {
+    opacity: 1;
+    margin-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+  }
+  100% {
+    opacity: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+  }
+}
+@keyframes NotificationFadeOut {
+  0% {
+    opacity: 1;
+    margin-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-height: 150px;
+  }
+  100% {
+    opacity: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 0;
+  }
+}

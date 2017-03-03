@@ -1,0 +1,57 @@
+
+/*.trBgClass{
+   background-color: green;
+}*/
+.table-div-style{
+   width: 100%;
+   height: 100%;
+}
+.table-div-style .table-style{
+  table-layout: fixed;
+  width: 100%;
+}
+.table-div-style .summary-info
+{
+   display: inline-block;
+   float: left;
+}
+.table-div-style .top-feature-group{
+   display: inline-block;
+   float: right;
+}
+.table-div-style .table-head-style{
+   clear: both;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   position: relative;
+}
+.table-div-style .table-head-style .table-title-style{
+    width: calc(100% - 17px);
+    float:left;
+    border-right-color: transparent;
+}
+.table-div-style .table-head-style .table-title-style > thead > tr > td:last-child{
+    border-right: 0px;
+}
+.table-div-style .table-head-style .table-head-right-scroll{
+  float: right;
+  width: 17px;
+  height: 43px;
+  border-right: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.table-div-style .table-body-position{
+  width: 100%;
+  position: relative;
+}
+.table-div-style .table-body-position .table-body-style{
+   width: 100%;
+   height: 100%;
+   overflow-y: scroll;
+   clear: both;
+}
+.table-foot-style{
+   text-align: center;
+}

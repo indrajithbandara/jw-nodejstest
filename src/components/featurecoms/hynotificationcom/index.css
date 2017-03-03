@@ -1,0 +1,8 @@
+.notification{
+    position: fixed;
+    width: 335px;
+    margin-right: 24px;
+    top : 24px;
+    right : 0px;
+    z-index: 1050;
+}

@@ -1,0 +1,19 @@
+.pagination-ul li{
+  cursor: pointer;
+}
+.pagination-ul li a{
+  float: none;
+}
+.pagination-ul .pagination-input-li{
+  position: relative;
+  /*left: -40px;*/
+}
+
+.pagination-ul .pagination-input{
+    display: inline-block;
+    width: 20%;
+}
+
+.pagination-ul .pagination-btn{
+    padding : 6px 8px;
+}

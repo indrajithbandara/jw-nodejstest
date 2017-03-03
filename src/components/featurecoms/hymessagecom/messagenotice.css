@@ -1,0 +1,108 @@
+.message-notice-content{
+  display: block;
+  position: relative;
+  right: 50%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+.message-notice-content.message-success .message-icon {
+  background-color: #87d068;
+}
+.message-notice-content.message-error .message-icon {
+  background-color: #f50;
+}
+.message-notice-content.message-warning .message-icon {
+  background-color: #fa0;
+}
+.message-notice-content.message-info .message-icon,
+.message-notice-content.message-loading .message-icon {
+  background-color: #108ee9;
+}
+.message-notice-content .message-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  top: 1px;
+  text-align: center;
+}
+.icon-check-circle::before {
+  content: "√";
+}
+.icon-close-circle::before{
+  content: '×';
+}
+.icon-warning-circle::before{
+  content: '!';
+}
+
+.message-notice-content .message-nitice-content-close{
+  position: absolute;
+  right: 1px;
+  top: -3px;
+  color: #999;
+  outline: none;
+  text-decoration: none;
+}
+.message-notice-content .message-nitice-content-close:hover{
+  color: #404040;
+}
+.message-notice-content .message-nitice-content-close .message-nitice-content-close-x{
+  font-size: 12px;
+  cursor: pointer;
+}
+.message-fade-enter{
+  animation: MessageFadeIn 0.24s;
+  webkit-animation: MessageFadeIn 0.24s;
+}
+.message-fade-leave{
+  animation: MessageFadeOut 0.24s;
+  webkit-animation: MessageFadeOut 0.24s;
+}
+@-webkit-keyframes MessageFadeIn {
+  0%{
+    opacity: 0;
+    top: 0px;
+  }
+  100%{
+    opacity: 1;
+    top: 30px;
+  }
+}
+@keyframes MessageFadeIn{
+  0%{
+    opacity: 0;
+    top: 0px;
+  }
+  100%{
+    opacity: 1;
+    top: 30px;
+  }
+}
+@-webkit-keyframes MessageFadeOut{
+  0%{
+    opacity: 1;
+    top: 30px;
+  }
+  100%{
+    opacity: 0;
+    top: 0px;
+  }
+}
+@keyframes MessageFadeOut{
+  0%{
+    opacity: 1;
+    top: 30px;
+  }
+  100%{
+    opacity: 0;
+    top: 0px;
+  }
+}

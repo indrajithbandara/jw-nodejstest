@@ -1,0 +1,15 @@
+.message{
+  font-size: 12px;
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.message .message-notice{
+  width: auto;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+}

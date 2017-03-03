@@ -1,0 +1,13 @@
+.table-head-style .table-title-style .table-td-class{
+  white-space : nowrap;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.table-body-style .table-content-style .table-td-class{
+  white-space : nowrap;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  padding: 6px;
+}

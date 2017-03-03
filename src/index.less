@@ -1,0 +1,204 @@
+@gray-darker: lighten(#000, 13.5%); // #222
+@gray-dark: lighten(#000, 20%);
+// #333
+@gray: lighten(#000, 33.5%); // #555
+@gray-light: lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 93.5%); // #eee
+@brand-primary: darken(#428bca, 6.5%); // #337ab7
+@brand-success: #5cb85c;
+@brand-info: #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger: #d9534f;
+
+#root .primary-backgroundcolor {
+  background-color: @brand-primary
+}
+
+#root .success-backgroundcolor {
+  background-color: @brand-success
+}
+
+#root .info-backgroundcolor {
+  background-color: @brand-info
+}
+
+#root .warning-backgroundcolor {
+  background-color: @brand-warning
+}
+
+#root .danger-backgroundcolor {
+  background-color: @brand-danger
+}
+
+#root .primary-color {
+  color: @brand-primary
+}
+
+#root .success-color {
+  color: @brand-success
+}
+
+#root .info-color {
+  color: @brand-info
+}
+
+#root .warning-color {
+  color: @brand-warning
+}
+
+#root .danger-color {
+  color: @brand-danger
+}
+
+#root .primary-bordertopcolor {
+  border-top-color: @brand-primary
+}
+
+#root .success-bordertopcolor {
+  border-top-color: @brand-success
+}
+
+#root .info-bordertopcolor {
+  border-top-color: @brand-info
+}
+
+#root .warning-bordertopcolor {
+  border-top-color: @brand-warning
+}
+
+#root .danger-bordertopcolor {
+  border-top-color: @brand-danger
+}
+
+#root .gray-lighter-color {
+  color: @gray-lighter;
+}
+
+#root .gray-lighter-backgroundcolor {
+  background-color: @gray-lighter;
+}
+
+#root .gray-darker-color {
+  color: @gray-darker;
+}
+
+#root .gray-darker-backgroundcolor {
+  background-color: @gray-darker;
+}
+
+#root .gray-dark-color {
+  color: @gray-dark;
+}
+
+#root .gray-dark-backgroundcolor {
+  background-color: @gray-dark;
+}
+
+#root .gray-color {
+  color: @gray;
+}
+
+#root .gray-backgroundcolor {
+  background-color: @gray;
+}
+
+#root .gray-light-color {
+  color: @gray-light;
+}
+
+#root .gray-light-backgroundcolor {
+  background-color: @gray-light;
+}
+
+// 覆盖bootstr样式
+
+// 修改tooltip最大宽度
+#root .tooltip,#root .tooltip .tooltip-inner{
+  max-width:none;
+}
+
+#root,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+  overflow: hidden;
+}
+
+#root .form-group{
+  position: relative;
+}
+
+#root .appframe,
+#root .appframe .mainappframe {
+  width: 100%;
+  height: 100%;
+}
+
+#root .appframe .mainappframe .leftframe,
+#root .appframe .mainappframe .rightframe {
+  height: 100%;
+}
+
+#root .appframe .mainappframe .rightframe {
+  padding-bottom: 42px;
+}
+
+#root .tab-content {
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+#root .leftframe {
+  border-right: 1px solid #ddd;
+}
+
+#root .nav-tabs > li:first-child {
+  margin-left: 10rem;
+}
+
+#root .nav-tabs > li {
+  cursor: pointer;
+}
+
+#root .leftframe .list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#root .leftframe .list-group-item {
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+#root .panel {
+  border-radius: 0;
+}
+
+#root .panel .panel-heading {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#root .appframe .paddingl-r-0 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-left: 0;
+}
+
+#root .form-control {
+  padding: 5px;
+}
+
+#root .tooltip .tooltip-arrow.err {
+  background-color: @brand-danger;
+}
